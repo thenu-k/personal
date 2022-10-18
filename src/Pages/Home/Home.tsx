@@ -1,19 +1,29 @@
 import * as S from './Home.styled'
-import landing from '../../Assets/landing.jpg'
+import { annotate } from 'rough-notation'
 import { useEffect } from 'react'
 
 const Home = () => {
   useEffect(()=>{
-    // Parallax effect
-    const paxE = document.querySelector('#paxE')
-    const parallax = (paxE:Element | null) => {
-      var yPos = 0 - window.pageYOffset/5
+    const cardOuter = document.querySelector('.design.outer')
+    // cardOuter?.addEventListener('mousemove', rotate);
+    // cardOuter?.addEventListener('mouseout', stopRotate)
+    function rotate(e:any){
       // @ts-ignore
-      paxE.style.top = 50 + yPos + "%"
+      const cardItem = this.querySelector('.inner');
+      const halfHeight = cardItem.offsetHeight / 2;
+    
+      cardItem.style.transform = 'rotateX('+-(e.offsetY - halfHeight) / 15+'deg) rotateY('+(e.offsetX - halfHeight) / 15+'deg)';
     }
-    window.addEventListener('scroll', () => {
-      // parallax(paxE)
-    })
+    function stopRotate(){
+      // @ts-ignore
+      const cardItem = this.querySelector('.inner');
+      cardItem.style.transform = 'rotate(0)';
+    }
+
+    const e = document.querySelector('p');
+    //@ts-ignore
+//const annotation = annotate(e, { type: 'box' });
+//annotation.show();
   })
   return (
     <S.Home>
@@ -26,7 +36,14 @@ const Home = () => {
           </div>
           <S.About>
             <div className="inner">
-              
+              <div className="text outer"></div>
+              <div className="design outer">
+                <div className="design inner center">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo reiciendis animi eaque perferendis saepe laborum, non dignissimos eligendi corrupti rerum accusantium, consequuntur, adipisci minus? Totam minima esse excepturi doloribus magni, quo possimus sequi at corrupti laudantium unde laboriosam cum reiciendis dolore soluta ratione voluptatibus? Dolore iste consequuntur tempora ut corrupti, aut at suscipit? Qui, sit unde at ipsum magnam officiis.
+                  </p>
+                </div>
+              </div>
             </div>
           </S.About>
         </S.LandingImageWrap>

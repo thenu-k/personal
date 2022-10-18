@@ -49,8 +49,37 @@ export const About = styled.div`
     >.inner{
         width: 100%;
         background-color: #0b0b0b;
-        height: 300px;
         border-radius: 50px 50px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    >.inner>*{
+        width: 45%;
+        height: 450px;
+        margin: 100px 0;
+        &.design.outer{
+            border-radius: 20px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            >.inner.design{
+                background-color: #121212;
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+                transition: transform 0.2s;  
+                color: white;
+                font-size: 3em;
+
+                >p{
+                    width: 75%;
+                    font-size: 18px;
+                    line-height: 2;
+                    text-align: left;
+                    font-family: 'Merriweather', serif;
+                }
+            }
+        }
     }
     
 `
