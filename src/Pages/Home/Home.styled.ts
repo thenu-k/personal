@@ -45,11 +45,11 @@ export const LandingImageWrap = styled.div`
 
 export const About = styled.div`
     width: 100%;
-    background-color: transparent;
+    background-color: #0b0b0b;
+    border-radius: 50px 50px 0 0;
     >.inner{
-        width: 100%;
+        width: 90%;
         background-color: #0b0b0b;
-        border-radius: 50px 50px 0 0;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -59,6 +59,7 @@ export const About = styled.div`
         height: 450px;
         margin: 100px 0;
         &.design.outer{
+            margin-left: auto;
             border-radius: 20px;
             transform-style: preserve-3d;
             perspective: 1000px;

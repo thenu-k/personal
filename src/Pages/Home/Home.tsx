@@ -1,6 +1,7 @@
 import * as S from './Home.styled'
 import { annotate } from 'rough-notation'
 import { useEffect } from 'react'
+import Contact from './Contact/Contact'
 
 const Home = () => {
   useEffect(()=>{
@@ -26,6 +27,7 @@ const Home = () => {
 //annotation.show();
   })
   return (
+    <>
     <S.Home>
         <S.LandingImageWrap>
           <div className="landingText center">
@@ -34,7 +36,7 @@ const Home = () => {
               <span>Dev</span>
             </div>
           </div>
-          <S.About>
+          <S.About className='center'>
             <div className="inner">
               <div className="text outer"></div>
               <div className="design outer">
@@ -47,7 +49,9 @@ const Home = () => {
             </div>
           </S.About>
         </S.LandingImageWrap>
+        <Contact/>
     </S.Home>
+    </>
   )
 }
 
