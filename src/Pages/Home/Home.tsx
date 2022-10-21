@@ -38,11 +38,13 @@ const Home = () => {
           </div>
           <S.About className='center'>
             <div className="inner">
-              <div className="text outer"></div>
+              <div className="text outer">
+                The Sunday<br/>Times
+              </div>
               <div className="design outer">
                 <div className="design inner center">
                   <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo reiciendis animi eaque perferendis saepe laborum, non dignissimos eligendi corrupti rerum accusantium, consequuntur, adipisci minus? Totam minima esse excepturi doloribus magni, quo possimus sequi at corrupti laudantium unde laboriosam cum reiciendis dolore soluta ratione voluptatibus? Dolore iste consequuntur tempora ut corrupti, aut at suscipit? Qui, sit unde at ipsum magnam officiis.
+                    
                   </p>
                 </div>
               </div>

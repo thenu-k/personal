@@ -74,12 +74,17 @@ export const About = styled.div`
 
                 >p{
                     width: 75%;
-                    font-size: 18px;
-                    line-height: 2;
+                    font-size: 25px;
+                    line-height: 1.5;
                     text-align: left;
-                    font-family: 'Merriweather', serif;
+                    font-family: 'Oswald', sans-serif;
                 }
             }
+        }
+        &.text.outer{
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+            font-size: 5em;
         }
     }
     
