@@ -11,6 +11,8 @@ export const Contact = styled.div`
         border-radius: 20px;
         width: 90%;
         height: 500px;
+        /*  */
+        margin-top: 50px;
         margin-bottom: 100px;
         background-color: #121212;
         display: flex;

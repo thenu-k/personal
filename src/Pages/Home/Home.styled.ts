@@ -44,6 +44,7 @@ export const LandingImageWrap = styled.div`
 `
 
 export const About = styled.div`
+    min-height: 50px;
     width: 100%;
     background-color: #0b0b0b;
     border-radius: 50px 50px 0 0;

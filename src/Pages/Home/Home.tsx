@@ -37,7 +37,7 @@ const Home = () => {
             </div>
           </div>
           <S.About className='center'>
-            <div className="inner">
+            {/* <div className="inner">
               <div className="text outer">
                 <div className="title">
                   The Good<br/>Times
@@ -53,7 +53,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </S.About>
         </S.LandingImageWrap>
         <Contact/>
