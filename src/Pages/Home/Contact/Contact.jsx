@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import * as S from './Contact.styled'
 import ReactBodymovin from 'react-bodymovin'
 import orbitJSON from '../../../Assets/orbitJSON.json'
+import  InnerContact  from './InnerContact/InnerContact'
 
 const Contact = () => {
 
@@ -19,16 +20,11 @@ const Contact = () => {
     <div className="inner">
     {/* <iframe src="https://lottie.host/?file=7f3d40c8-b88f-45a4-b161-e49ac43e21d6/CmP6DKvkRZ.json"></iframe> */}
       <S.Socials>
-        <ReactBodymovin options={bodymovinOptions}></ReactBodymovin>
-        <p>
-          {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, provident? */}
-        </p>
-        <div className="icons">
-
-        </div>
-      </S.Socials>
-      <S.ContactForm>
         
+      </S.Socials>
+      {/* <hr id='bar'></hr> */}
+      <S.ContactForm>
+        <InnerContact/>
       </S.ContactForm>
     </div>
    </S.Contact>

@@ -20,6 +20,12 @@ export const Contact = styled.div`
         justify-content: space-evenly;
         align-items: center;
     }
+    & #bar{
+        color: white;
+        background-color: white;
+        height: 75%;
+        width: 1px;
+    }
 `
 
 export const Socials = styled.div`
@@ -28,6 +34,7 @@ export const Socials = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: blue; */
     & p {
         width: 90%;
         font-size: 18px;
@@ -40,5 +47,5 @@ export const Socials = styled.div`
 export const ContactForm = styled.div`
     height: 80%;
     width: 50%;
-    /* background-color: green; */
+    background-color: inherit;
 `
