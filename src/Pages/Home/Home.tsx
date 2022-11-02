@@ -33,7 +33,7 @@ const Home = () => {
           <div className="landingText center">
             <div id='paxE' className="wrap">
               <h1>Thenu Kal</h1>
-              <span>Dev</span>
+              <span>Physics/Dev</span>
             </div>
           </div>
           <S.About className='center'>
